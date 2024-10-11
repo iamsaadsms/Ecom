@@ -1,0 +1,37 @@
+.Filter {
+    display: flex;
+    justify-content: right;
+    margin-top: 5vh;
+    margin-right: 5vw;
+    cursor: pointer;
+}
+
+.sort {
+    font-size: 2vh;
+    margin-right: 1vw;
+    margin-top: 2vh;
+}
+
+.filter-dropdown {
+    padding: 2vh 3vw;
+    background-color: rgb(255, 255, 255);
+    color: rgb(82, 82, 82);
+    border: 1px solid rgb(82, 82, 82);
+    cursor: pointer;
+    transition: background-color 0.3s;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border-radius: 4px;
+    font-size: 2.25vh;
+}
+
+.filter-dropdown:hover {
+    background-color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+.options {
+    height: 6vh;
+    cursor: pointer;
+}

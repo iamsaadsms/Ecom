@@ -1,0 +1,93 @@
+.best-sellers {
+  margin-left: 6vw;
+  margin-right: 5vw;
+}
+
+.img-splide {
+  cursor: pointer;
+  position: relative;
+  object-fit: cover;
+}
+
+.s-head {
+  font-size: 6.5vh;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  letter-spacing: 0.25vw;
+}
+
+.splide-head {
+  margin-bottom: 10vh;
+}
+
+.details {
+  padding-top: 1vh;
+  font-family: "Merriweather", serif;
+  text-align: center;
+}
+
+.name {
+  font-size: 3vh;
+  letter-spacing: 0.05vw;
+  cursor: pointer;
+  margin-bottom: 1vh;
+}
+
+.name:hover {
+  color: rgb(14, 99, 18);
+}
+
+.price {
+  font-size: 2.5vh;
+  letter-spacing: 0.15vw;
+  color: rgba(75, 74, 74, 0.9);
+  padding-top: 1vh;
+  cursor: pointer;
+}
+
+.price:hover {
+  color: rgb(160, 119, 17);
+}
+
+/* Styles for Slick Slider */
+.slick-slide {
+  padding: 0;
+  position: relative;
+  overflow: hidden; /* Ensure content stays within bounds */
+}
+
+.slick-track {
+  display: flex;
+  position: relative;
+}
+
+.slick-arrow {
+  border: none; /* Remove border */
+  border-radius: 50%; /* Make arrows round */
+  color: #302e2e; /* Arrow color */
+  width: 3rem; /* Width of the arrow container */
+  height: 3rem; /* Height of the arrow container */
+  display: flex; /* Center the arrow icon */
+  align-items: center; /* Align items center vertically */
+  justify-content: center; /* Align items center horizontally */
+  z-index: 1; /* Ensure arrows are on top */
+}
+
+.slick-prev {
+  left: 10px; /* Adjust position */
+  transform: translateY(-50%); /* Center vertically */
+}
+
+.slick-next {
+  right: 50px; /* Adjust position */
+  transform: translateY(-50%); /* Center vertically */
+}
+
+.slick-dots {
+  bottom: -30px; /* Adjust position of dots */
+  display: flex !important;
+  justify-content: center;
+}
+
+.slide-content {
+  position: relative;
+}

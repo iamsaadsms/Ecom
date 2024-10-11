@@ -1,0 +1,35 @@
+.wrapper {
+    height: 6vh;
+    width: 12vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #FFF;
+    box-shadow: 0 5px 10px rgb(97, 91, 91, 0.2);
+    border: 1px solid rgb(226, 223, 223);
+    margin-bottom: 10px;
+  }
+  
+  .wrapper .minus, .wrapper .plus {
+    cursor: pointer;
+    user-select: none;
+  }
+  
+  .wrapper .num {
+    margin: 0 10px;
+    width: 5vw;
+    text-align: center;
+    border-right: 2px solid rgba(0,0,0,0.1);
+    border-left: 2px solid rgba(0,0,0,0.1);
+  }
+  
+  .wrapper span {
+    width: 100%;
+    text-align: center;
+    font-size: 3vh;
+    font-weight: 600;
+    cursor: pointer;
+    user-select: none;
+    color: rgb(97, 91, 91);
+  }
+  

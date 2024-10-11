@@ -1,0 +1,111 @@
+{
+    "item1": {
+        "id":"SOS000001",
+      "pic": "s1.jpg",
+      "pic2": "s6.jpg",
+      "name": "New Microfiber Towels",
+      "price": 1300,
+      "dateAdded": "2024-07-15T00:00:00Z",
+      "details": [
+        {
+          "head": "DETAILS",
+          "info": "Detailing brushes are small, precise tools for cleaning tight spaces and delicate surfaces. Ideal for automotive, art, and electronics care, they ensure thorough and careful cleaning."
+        },
+        {
+          "head": "HOW TO USE",
+          "info": "Detailing brushes are used to clean intricate and hard-to-reach areas of your vehicle, such as vents, trim, and wheel spokes. Gently brush these areas with soft, circular motions to remove dust, dirt, and debris without causing scratches."
+        }
+      ]
+    },
+    "item2": {
+        "id":"SOS000002",
+      "pic": "s2.jpg",
+      "pic2": "s5.jpg",
+      "name": "Detailing Brushes",
+      "price": 3900,
+      "dateAdded": "2024-07-14T00:00:00Z",
+      "details": [
+        {
+          "head": "DETAILS",
+          "info": "Detailing brushes are small, precise tools for cleaning tight spaces and delicate surfaces. Ideal for automotive, art, and electronics care, they ensure thorough and careful cleaning."
+        },
+        {
+          "head": "HOW TO USE",
+          "info": "Detailing brushes are used to clean intricate and hard-to-reach areas of your vehicle, such as vents, trim, and wheel spokes. Gently brush these areas with soft, circular motions to remove dust, dirt, and debris without causing scratches."
+        }
+      ]
+    },
+    "item3": {
+        "id":"SOS000003",
+      "pic": "s3.jpg",
+      "pic2": "s4.jpg",
+      "name": "New Polishing Pads",
+      "price": 1700,
+      "dateAdded": "2024-07-13T00:00:00Z",
+      "details": [
+        {
+          "head": "DETAILS",
+          "info": "Detailing brushes are small, precise tools for cleaning tight spaces and delicate surfaces. Ideal for automotive, art, and electronics care, they ensure thorough and careful cleaning."
+        },
+        {
+          "head": "HOW TO USE",
+          "info": "Detailing brushes are used to clean intricate and hard-to-reach areas of your vehicle, such as vents, trim, and wheel spokes. Gently brush these areas with soft, circular motions to remove dust, dirt, and debris without causing scratches."
+        }
+      ]
+    },
+    "item4": {
+        "id":"SOS000004",
+      "pic": "s4.jpg",
+      "pic2": "s3.jpg",
+      "name": "New Detailing Swabs",
+      "price": 2500,
+      "dateAdded": "2024-07-12T00:00:00Z",
+      "details": [
+        {
+          "head": "DETAILS",
+          "info": "Detailing brushes are small, precise tools for cleaning tight spaces and delicate surfaces. Ideal for automotive, art, and electronics care, they ensure thorough and careful cleaning."
+        },
+        {
+          "head": "HOW TO USE",
+          "info": "Detailing brushes are used to clean intricate and hard-to-reach areas of your vehicle, such as vents, trim, and wheel spokes. Gently brush these areas with soft, circular motions to remove dust, dirt, and debris without causing scratches."
+        }
+      ]
+    },
+    "item5": {
+        "id":"SOS000005",
+      "pic": "s5.jpg",
+      "pic2": "s2.jpg",
+      "name": "New Detailing Sponges",
+      "price": 1200,
+      "dateAdded": "2024-07-11T00:00:00Z",
+      "details": [
+        {
+          "head": "DETAILS",
+          "info": "Detailing brushes are small, precise tools for cleaning tight spaces and delicate surfaces. Ideal for automotive, art, and electronics care, they ensure thorough and careful cleaning."
+        },
+        {
+          "head": "HOW TO USE",
+          "info": "Detailing brushes are used to clean intricate and hard-to-reach areas of your vehicle, such as vents, trim, and wheel spokes. Gently brush these areas with soft, circular motions to remove dust, dirt, and debris without causing scratches."
+        }
+      ]
+    },
+    "item6": {
+        "id":"SOS000006",
+      "pic": "s6.jpg",
+      "pic2": "s1.jpg",
+      "name": "New Drying Towels",
+      "price": 1100,
+      "dateAdded": "2024-07-10T00:00:00Z",
+      "details": [
+        {
+          "head": "DETAILS",
+          "info": "Detailing brushes are small, precise tools for cleaning tight spaces and delicate surfaces. Ideal for automotive, art, and electronics care, they ensure thorough and careful cleaning."
+        },
+        {
+          "head": "HOW TO USE",
+          "info": "Detailing brushes are used to clean intricate and hard-to-reach areas of your vehicle, such as vents, trim, and wheel spokes. Gently brush these areas with soft, circular motions to remove dust, dirt, and debris without causing scratches."
+        }
+      ]
+    }
+  }
+  

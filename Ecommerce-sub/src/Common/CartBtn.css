@@ -1,0 +1,38 @@
+.add-to-cart {
+  position: absolute;
+  overflow: hidden;
+  background: rgba(70, 70, 70, 0.9);
+  transition: height 0.3s ease-in-out;
+  cursor: pointer;
+  text-align: center;
+  width: 28vw;
+  z-index: 1001; 
+}
+
+.slick-slide:hover .add-to-cart {
+  height: 6vh; 
+  padding-top: 2vh;
+  width: 28vw;
+}
+
+.cart {
+  color: rgb(160, 119, 17);
+  font-size: 2.5vh;
+  text-align: center;
+  letter-spacing: 0.1vw;
+}
+
+.CartBtn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); 
+  z-index: 100; /* Increased z-index to ensure visibility */
+  background-color: rgba(255, 0, 0, 0.5); /* Red background for visibility */
+  width: 100px;
+  height: 50px;
+  display: flex; 
+  align-items: center;
+  justify-content: center;
+
+}

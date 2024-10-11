@@ -1,0 +1,9 @@
+.sale-style {
+    position: absolute;
+    bottom: 12vh;
+    left: 0vw;
+    right: 0;
+    width: 20vw;
+    border-bottom-right-radius: 1.65vw;
+    border-bottom-left-radius: 1.65vw;
+  }

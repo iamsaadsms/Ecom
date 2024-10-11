@@ -1,0 +1,128 @@
+.side-cart {
+    position: fixed;
+    top: 0;
+    right: -100%; /* Hidden initially */
+    height: 100vh;
+    width: 35vw;
+    border-left: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    z-index: 9999;
+    transition: right 0.3s ease-in-out;
+}
+
+.side-cart.active {
+    right: 0; /* Slide in */
+}
+
+  .side-header {
+    padding-top: 1vh;
+    display: flex;
+    justify-content: space-between;
+    height: 10vh;
+    border-bottom: 1px solid black;
+    padding-left: 2vw;
+    padding-right: 1vw;
+  }
+  
+
+  .side-head {
+    font-size: 4vh;
+    letter-spacing: 1.6px;
+    color: rgb(97, 91, 91);
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+  }
+  
+  .cart-cross {
+    cursor: pointer;
+    font-size: 25px;
+    color: rgb(97, 91, 91);
+  }
+  
+  .item-rel {
+    display: flex;
+    margin-top: 4vh;
+    margin-bottom: 5vh;
+  }
+  .items-in-cart {
+    height: 60vh;
+    overflow-y:scroll;
+    margin-left: 3vh;
+  }
+  
+  .sidecart-img {
+    height: 25vh;
+    width: 10vw;
+  }
+  
+  .item-info {
+    display: flex;
+    flex-direction: column;
+    margin-left: 1vw;
+    text-align: left;
+    margin-top: 2vh;
+    letter-spacing: 0.05vw;
+  }
+
+  .cart-item-name {
+    font-size: 2.5vh;
+    color: rgb(51, 51, 51);
+    font-weight: 300;
+  }
+
+  .cart-item-id {
+    font-size: 2.5vh;
+    color: rgba(97, 91, 91, 0.8);
+    font-weight: 300;
+  }
+
+  .cart-item-price {
+    font-size: 2vh;
+    color: rgba(97, 91, 91, 0.8);
+    margin-left: 1vw;
+    margin-top: 1vh;
+  }
+
+  .item-det {
+    margin-top: 4vh;
+  }
+
+  .item-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .trash{
+    color: rgb(48, 48, 48);
+  }
+
+  .remove-btn{
+    cursor: pointer;
+    height: 6vh;
+    width: 2.5vw;
+    margin-left: 5vw;
+  }
+
+  .subtotal {
+    display: flex;
+    /* margin-left: 5vw;
+    margin-right: 5vw; */
+    margin: 5vh 5vw;
+    justify-content: space-around;
+    font-family: 'ITC Benguiat Condensed', Consolas, 'Courier New', monospace;
+    font-size: 4vh;
+  }
+
+  .sub {
+    color: rgb(97, 91, 91);
+  }
+
+.empty-cart {
+    font-size: 4vh;
+}
+
+.cart-btn {
+  margin-left: 3vw;
+}

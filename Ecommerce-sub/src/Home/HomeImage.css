@@ -1,0 +1,12 @@
+.HomeImage {
+    margin-top: 15vh;
+    margin-bottom: 10vh;
+    overflow-x: hidden;
+}
+
+.h-img {
+    width: 100vw;
+    height: 80vh;
+    object-fit: cover;
+    position: relative;
+}

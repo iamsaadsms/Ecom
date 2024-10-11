@@ -1,0 +1,88 @@
+.Footer {
+    display: flex;
+    margin-top: 25vh;
+    border-bottom: 1px solid rgb(255, 255, 255);;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    justify-content: space-evenly;
+    background: rgb(14, 99, 18);
+    color: rgb(255, 255, 255);
+    overflow-x: hidden;
+}
+
+.c-logo {
+    width: 15vw;
+    height: 18vh;
+    padding-bottom: 5vh;
+}
+
+.company-logos, .about, .customer-support, .social-links {
+    display: flex;
+    flex-direction: column;
+    align-content: space-evenly;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    padding-top: 25vh;
+    padding-bottom: 20vh;
+}
+
+.company-logos {
+    border-right: 1px solid rgb(255, 255, 255);
+}
+
+.social-links {
+    border-left: 1px solid rgb(255, 255, 255);
+}
+
+.bluepexel, .copy {
+    font-size: 2vh;
+    letter-spacing: 0.1vw;
+    margin-bottom: 2vh;
+}
+
+.fhead {
+    font-size: 3.25vh;
+    margin-bottom: 3vh;
+    letter-spacing: 0.15vw;
+}
+
+.fcontents {
+    font-size: 2.5vh;
+    letter-spacing: 0.1vw;
+    margin-bottom: 2vh;
+}
+
+.fcontents:hover {
+    color: rgb(160, 119, 17);
+    cursor: pointer;
+}
+
+.create {
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+    background: rgb(14, 99, 18);
+    text-align: center;
+}
+
+.bluepexel {
+    color: rgb(255, 255, 255);
+    font-size: 2.2vh;
+    letter-spacing: 0.1vw;
+}
+
+.s-links {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.social {
+    font-size: 4.5vh;
+    cursor: pointer;
+}
+
+.what:hover {
+    color: rgb(11, 165, 19);
+}
+
+.face:hover {
+    color: rgb(17, 136, 184);
+}

@@ -1,0 +1,15 @@
+.best-sellers-cart {
+  position: absolute;
+  top: 64vh;
+  left: 0;
+  right: 0;
+  z-index: 11; 
+}
+
+.new-arrivals-cart {
+  position: absolute;
+  top: 64vh;
+  left: 0;
+  right: 0;
+  z-index: 11; 
+}

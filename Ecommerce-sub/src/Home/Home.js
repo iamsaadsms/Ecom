@@ -17,7 +17,7 @@ const importAll = (r) => {
 
 const images = importAll(require.context('../Media', false, /\.(png|jpe?g|svg)$/));
 
-const Home = () => {
+const Home = ({addToCart}) => {
   const [bestSellers, setBestSellers] = useState([]);
   const [newArrivals, setNewArrivals] = useState([]);
 
@@ -51,9 +51,9 @@ const Home = () => {
     <div className="Home">
       <Navbar />
       <Slider />
-      <BestSellers imgs={newArrivals} perPage={3} head="NEW ARRIVALS" className="new-arrivals-cart" style={newArrivalsCartStyle} />
+      <BestSellers imgs={newArrivals} perPage={3} head="NEW ARRIVALS" className="new-arrivals-cart" style={newArrivalsCartStyle} addToCart={addToCart}/>
       <HomeImage />
-      <BestSellers imgs={bestSellers} perPage={4} head="EXPLORE BEST SELLERS" className="best-sellers-cart" style={bestSellerCartStyle} />
+      <BestSellers imgs={bestSellers} perPage={4} head="EXPLORE BEST SELLERS" className="best-sellers-cart" style={bestSellerCartStyle} addToCart={addToCart}/>
       <Footer />
     </div>
   );

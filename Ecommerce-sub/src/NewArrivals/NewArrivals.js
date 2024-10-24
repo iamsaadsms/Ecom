@@ -14,7 +14,7 @@ const importAll = (r) => {
 
 const images = importAll(require.context('../Media', false, /\.(png|jpe?g|svg)$/));
 
-const NewArrivals = () => {
+const NewArrivals = ({addToCart}) => {
     const [items, setItems] = useState([]);
     const [sortedItems, setSortedItems] = useState([]);
 
@@ -34,7 +34,7 @@ const NewArrivals = () => {
         <div className="NewArrivals">
             <Navbar />
             <Filter items={items} setSortedItems={setSortedItems} />
-            <Articles head="NEW ARRIVALS" articleData={sortedItems} className="sale-style"/>
+            <Articles head="NEW ARRIVALS" articleData={sortedItems} className="sale-style" addToCart={addToCart}/>
             <Footer />
         </div>
     )

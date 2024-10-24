@@ -54,14 +54,14 @@ const App = () => {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/home" element={<Home />} />
-        <Route path="/sale" element={<Sale />} />
-        <Route path="/sale/:id" element={<Articles items={SaleJson} />} />
+        <Route path="/" element={<Home addToCart={addToCart}/>} />
+        <Route path="/home" element={<Home addToCart={addToCart}/>} />
+        <Route path="/sale" element={<Sale  addToCart={addToCart} />} />
+        <Route path="/sale/:id" element={<Articles items={SaleJson} addToCart={addToCart}  />} />
         <Route path="/item/:id" element={<Item addToCart={addToCart} toggleSideCart={toggleSideCart} />} />
-        <Route path="/quick-add/:id" element={<QuickAdd addToCart={addToCart} toggleSideCart={toggleSideCart} />} />
-        <Route path="/new-arrivals" element={<NewArrivals />} />
-        <Route path="/new-arrivals/:id" element={<Articles items={NArrivals} />} />
+        <Route path="/quick-add/:id" element={<QuickAdd  toggleSideCart={toggleSideCart} />} />
+        <Route path="/new-arrivals" element={<NewArrivals addToCart={addToCart} />} />
+        <Route path="/new-arrivals/:id" element={<Articles items={NArrivals} addToCart={addToCart}/>} />
       </Routes>
       <SideCart
         isActive={isSideCartActive}

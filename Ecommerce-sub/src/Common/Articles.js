@@ -1,12 +1,10 @@
-
 import React, { useState } from 'react';
-import './Articles.css';
 import { useNavigate } from 'react-router-dom';
 import CartBtn from './CartBtn';
 import QuickAdd from './QuickAdd';
+import './Articles.css';
 
-
-const Articles = ({ head, articleData, className }) => {
+const Articles = ({ head, articleData, className, addToCart }) => {
     const [showQuickAdd, setShowQuickAdd] = useState(false);
     const [selectedItem, setSelectedItem] = useState(null);
     const navigate = useNavigate();
@@ -22,12 +20,6 @@ const Articles = ({ head, articleData, className }) => {
 
     const handleCloseQuickAdd = () => {
         setShowQuickAdd(false);
-    };
-
-    const addToCart = (item, quantity) => {
-        // Implement your add to cart logic here, such as updating context or state
-        console.log('Item added to cart:', { ...item, quantity });
-        // You might need to update side cart state or context here
     };
 
     return (
@@ -79,7 +71,7 @@ const Articles = ({ head, articleData, className }) => {
                         name={selectedItem.name}
                         price={selectedItem.price}
                         onClose={handleCloseQuickAdd}
-                        addToCart={addToCart}  // Pass addToCart function
+                        addToCart={addToCart} // Pass addToCart function here
                     />
                 )}
             </div>

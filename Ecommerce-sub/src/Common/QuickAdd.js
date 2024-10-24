@@ -1,56 +1,23 @@
-
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import './QuickAdd.css';
 import Wrapper from "./Wrapper";
 import Button from "./Button";
-import SideCart from './SideCart'; // Import the side cart component here
 
-const QuickAdd = ({ id, img, name, price, onClose }) => {
-    const [cartItems, setCartItems] = useState([]); // Manage cart items here
+const QuickAdd = ({ id, img, name, price, onClose, addToCart }) => {
     const [quantity, setQuantity] = useState(1);
-    const [isSideCartActive, setIsSideCartActive] = useState(false); // SideCart toggle state
     const navigate = useNavigate();
 
     const handleQuantityChange = (newQuantity) => {
         setQuantity(newQuantity);
     };
-    const removeCartItem = (itemId) => {
-        setCartItems(prevItems => prevItems.filter(item => item.id !== itemId));
-      };
+
     const handleAddToCart = () => {
         const item = { id, img, name, price, quantity };
-        setCartItems(prevItems => {
-            const existingItem = prevItems.find(cartItem => cartItem.id === item.id);
-            if (existingItem) {
-                return prevItems.map(cartItem =>
-                    cartItem.id === item.id
-                        ? { ...cartItem, quantity: cartItem.quantity + quantity }
-                        : cartItem
-                );
-            } else {
-                return [...prevItems, item];
-            }
-        });
-        setIsSideCartActive(true); // Open the side cart after adding an item
-        console.log('Items in cart:', cartItems); // Log cart items
+        addToCart(item); // Use addToCart from props
+        onClose(); // Close the QuickAdd modal after adding to cart
     };
 
-    const toggleSideCart = () => {
-        setIsSideCartActive(prevState => !prevState); // Toggle side cart
-    };
-
-    const updateCartItemQuantity = (itemId, newQuantity) => {
-        setCartItems(prevItems =>
-            prevItems.map(item =>
-                item.id === itemId
-                    ? { ...item, quantity: newQuantity }
-                    : item
-            )
-        );
-    };
-
-    // Define itemBtn style variable
     const itemBtn = {
         width: '27vw',
         height: '7vh',
@@ -83,14 +50,6 @@ const QuickAdd = ({ id, img, name, price, onClose }) => {
                         </div>
                     </div>
                 </div>
-
-                <SideCart
-                    isActive={isSideCartActive}
-                    cartItems={cartItems}
-                    toggleSideCart={toggleSideCart}
-                    updateCartItemQuantity={updateCartItemQuantity}
-                    removeCartItem={removeCartItem}
-                />
             </div>
         </div>
     );

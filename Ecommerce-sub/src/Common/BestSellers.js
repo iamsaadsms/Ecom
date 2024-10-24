@@ -6,7 +6,7 @@ import './BestSellers.css';
 import QuickAdd from './QuickAdd';
 import CartBtn from './CartBtn';
 
-const BestSellers = ({ imgs, perPage, head, className, style }) => {
+const BestSellers = ({ imgs, perPage, head, className, style,addToCart }) => {
   const [showQuickAdd, setShowQuickAdd] = useState(false);
   const [selectedItem, setSelectedItem] = useState(null);
 
@@ -69,7 +69,7 @@ const BestSellers = ({ imgs, perPage, head, className, style }) => {
                         name={selectedItem.name}
                         price={selectedItem.price}
                         onClose={() => setShowQuickAdd(false)}
-                        // addToCart={addToCart}  
+                         addToCart={addToCart}  
                     />
       )}
     </div>

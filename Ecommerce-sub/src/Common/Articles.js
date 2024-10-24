@@ -1,12 +1,15 @@
-// Articles.js
+
 import React, { useState } from 'react';
 import './Articles.css';
 import { useNavigate } from 'react-router-dom';
 import CartBtn from './CartBtn';
 import QuickAdd from './QuickAdd';
+import SideCart from './SideCart'; 
 
 const Articles = ({ head, articleData, className }) => {
-    const [showQuickAdd, setShowQuickAdd] = useState(false);
+    const [cartItems, setCartItems] = useState([]); 
+    const [isSideCartActive, setIsSideCartActive] = useState(false); 
+    const [showQuickAdd, setShowQuickAdd] = useState(false); 
     const [selectedItem, setSelectedItem] = useState(null);
     const navigate = useNavigate();
 
@@ -16,19 +19,45 @@ const Articles = ({ head, articleData, className }) => {
 
     const addToCartHandler = (id, img, name, price) => {
         setSelectedItem({ id, img, name, price });
-        setShowQuickAdd(true);
+        setShowQuickAdd(true); 
     };
 
     const handleCloseQuickAdd = () => {
-        setShowQuickAdd(false);
+        setShowQuickAdd(false); 
     };
 
-    const addToCart = (item, quantity) => {
-        // Implement your add to cart logic here, such as updating context or state
-        console.log('Item added to cart:', { ...item, quantity });
-        // You might need to update side cart state or context here
+  
+    const addToCart = (newItem) => {
+        setCartItems(prevItems => {
+            const existingItem = prevItems.find(item => item.id === newItem.id);
+            if (existingItem) {
+                
+                return prevItems.map(item =>
+                    item.id === newItem.id
+                        ? { ...item, quantity: item.quantity + newItem.quantity }
+                        : item
+                );
+            } else {
+               
+                return [...prevItems, newItem];
+            }
+        });
+        console.log('Items in cart:', cartItems); 
+        setIsSideCartActive(true);
     };
 
+    const toggleSideCart = () => {
+        setIsSideCartActive(prevState => !prevState);
+    };
+    const updateCartItemQuantity = (itemId, newQuantity) => {
+        setCartItems(prevItems =>
+          prevItems.map(item =>
+            item.id === itemId
+              ? { ...item, quantity: newQuantity }
+              : item
+          )
+        );
+      };
     return (
         <>
             <div className="articles-head">
@@ -78,12 +107,20 @@ const Articles = ({ head, articleData, className }) => {
                         name={selectedItem.name}
                         price={selectedItem.price}
                         onClose={handleCloseQuickAdd}
-                        addToCart={addToCart}  // Pass addToCart function
+                        addToCart={addToCart}  
                     />
                 )}
             </div>
+      
+            <SideCart
+                isActive={isSideCartActive} 
+                cartItems={cartItems}
+                toggleSideCart={toggleSideCart} 
+                updateCartItemQuantity={updateCartItemQuantity} 
+               
+            />
         </>
     );
-}
+};
 
 export default Articles;

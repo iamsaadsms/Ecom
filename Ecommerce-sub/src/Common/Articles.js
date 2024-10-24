@@ -1,9 +1,10 @@
-// Articles.js
+
 import React, { useState } from 'react';
 import './Articles.css';
 import { useNavigate } from 'react-router-dom';
 import CartBtn from './CartBtn';
 import QuickAdd from './QuickAdd';
+
 
 const Articles = ({ head, articleData, className }) => {
     const [showQuickAdd, setShowQuickAdd] = useState(false);
@@ -16,7 +17,7 @@ const Articles = ({ head, articleData, className }) => {
 
     const addToCartHandler = (id, img, name, price) => {
         setSelectedItem({ id, img, name, price });
-        setShowQuickAdd(true);
+        setShowQuickAdd(true); 
     };
 
     const handleCloseQuickAdd = () => {
@@ -84,6 +85,6 @@ const Articles = ({ head, articleData, className }) => {
             </div>
         </>
     );
-}
+};
 
 export default Articles;

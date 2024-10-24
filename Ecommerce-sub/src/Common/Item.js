@@ -26,7 +26,7 @@ export default function Item({ addToCart }) {
 
   const handleAddToCart = () => {
     const item = { id: location.state.id, img, name, price, quantity };
-    console.log('Adding to cart:', item); // Log item details
+    console.log('Adding to cart from single page:', item); // Log item details
     addToCart(item);
   };
 

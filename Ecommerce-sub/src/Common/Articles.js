@@ -4,11 +4,9 @@ import './Articles.css';
 import { useNavigate } from 'react-router-dom';
 import CartBtn from './CartBtn';
 import QuickAdd from './QuickAdd';
-import SideCart from './SideCart'; 
 
 const Articles = ({ head, articleData, className }) => {
-    const [cartItems, setCartItems] = useState([]); 
-    const [isSideCartActive, setIsSideCartActive] = useState(false); 
+
     const [showQuickAdd, setShowQuickAdd] = useState(false); 
     const [selectedItem, setSelectedItem] = useState(null);
     const navigate = useNavigate();
@@ -21,43 +19,6 @@ const Articles = ({ head, articleData, className }) => {
         setSelectedItem({ id, img, name, price });
         setShowQuickAdd(true); 
     };
-
-    const handleCloseQuickAdd = () => {
-        setShowQuickAdd(false); 
-    };
-
-  
-    const addToCart = (newItem) => {
-        setCartItems(prevItems => {
-            const existingItem = prevItems.find(item => item.id === newItem.id);
-            if (existingItem) {
-                
-                return prevItems.map(item =>
-                    item.id === newItem.id
-                        ? { ...item, quantity: item.quantity + newItem.quantity }
-                        : item
-                );
-            } else {
-               
-                return [...prevItems, newItem];
-            }
-        });
-        console.log('Items in cart:', cartItems); 
-        setIsSideCartActive(true);
-    };
-
-    const toggleSideCart = () => {
-        setIsSideCartActive(prevState => !prevState);
-    };
-    const updateCartItemQuantity = (itemId, newQuantity) => {
-        setCartItems(prevItems =>
-          prevItems.map(item =>
-            item.id === itemId
-              ? { ...item, quantity: newQuantity }
-              : item
-          )
-        );
-      };
     return (
         <>
             <div className="articles-head">
@@ -106,19 +67,10 @@ const Articles = ({ head, articleData, className }) => {
                         img={selectedItem.img}
                         name={selectedItem.name}
                         price={selectedItem.price}
-                        onClose={handleCloseQuickAdd}
-                        addToCart={addToCart}  
                     />
                 )}
             </div>
       
-            <SideCart
-                isActive={isSideCartActive} 
-                cartItems={cartItems}
-                toggleSideCart={toggleSideCart} 
-                updateCartItemQuantity={updateCartItemQuantity} 
-               
-            />
         </>
     );
 };

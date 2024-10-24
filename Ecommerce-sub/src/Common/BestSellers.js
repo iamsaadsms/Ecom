@@ -64,11 +64,13 @@ const BestSellers = ({ imgs, perPage, head, className, style }) => {
 
       {showQuickAdd && (
         <QuickAdd
-          img={selectedItem.img}
-          name={selectedItem.name}
-          price={selectedItem.price}
-          onClose={() => setShowQuickAdd(false)}
-        />
+                        id={selectedItem.id}
+                        img={selectedItem.img}
+                        name={selectedItem.name}
+                        price={selectedItem.price}
+                        onClose={() => setShowQuickAdd(false)}
+                        // addToCart={addToCart}  
+                    />
       )}
     </div>
   );

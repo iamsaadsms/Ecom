@@ -14,7 +14,7 @@ const QuickAdd = ({ id, img, name, price, onClose, addToCart }) => {
 
     const handleAddToCart = () => {
         const item = { id, img, name, price, quantity };
-        console.log('Adding to cart:', item); // Log item details
+        console.log('Adding from quickadd page to cart:', item); // Log item details
         addToCart(item); // Add item to cart
     };
 

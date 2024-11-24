@@ -1,0 +1,169 @@
+/* Styling for the Cart header */
+.cart-h {
+  margin: 5vh 0vw; 
+  margin-top: 18vh;
+  font-size: 6vh;
+  letter-spacing: 0.2vw;
+  font-weight: 400;
+  color: rgb(97, 91, 91);
+  text-align: center;
+}
+
+/* Styling for the product header section */
+.product-h {
+  display: flex;
+  justify-content: space-around;
+  color: rgba(97, 91, 91, 0.6);
+  letter-spacing: 0.1vw;
+  margin-top: 3vh;
+}
+
+/* Styling for the left and right columns under products */
+.p-r {
+  display: flex;
+  justify-content: space-between;
+  width: 25vw;
+}
+
+.p-h {
+  font-size: 2.5vh;
+}
+
+/* Main content section where cart items will be shown */
+.cart-content-final {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  width: 70vw;
+  margin-left: 15vw;
+  margin-top: 5vh;
+  height: auto; /* Allow the container to grow based on content */
+}
+
+/* Styling for individual cart items */
+.cart-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20vw;
+  width: 100%;
+  margin-bottom: 2vh;
+  padding: 2vh;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  height: 25vh;
+}
+
+/* Styling for item images */
+.img-item {
+  width: 8vw; /* Adjust based on how much space you want for the images */
+  height: 20vh;
+  object-fit: cover;
+}
+
+/* Styling for the item details section */
+.items-in-cart {
+  display: flex;
+  flex-direction: column;
+  margin-left: 2vw;
+  width: 50%;
+}
+
+/* Styling for item details (name, price, size) */
+.i-detail {
+  font-size: 2vh;
+  margin-bottom: 1vh;
+}
+.cart-left {
+  display: flex;
+}
+
+/* Styling for the right side of the cart item (quantity and total price) */
+.cart-right {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 7vw;
+  align-items: center;
+  width: 30vw;
+}
+
+/* Styling for quantity section */
+.cart-qty {
+  display: flex;
+  flex-direction: column;
+  gap: 2vh;
+  text-align: center;
+  margin-bottom: 1vh;
+}
+
+/* Styling for total price */
+.cart-total {
+  font-size: 1.5vh;
+  font-weight: bold;
+  color: #333;
+}
+
+
+/* Footer styling (already included in Cart) */
+hr {
+  margin-top: 2vh;
+}
+
+/* Styling for empty cart message */
+.empty-cart {
+  font-size: 2.5vh;
+  text-align: center;
+  color: rgba(97, 91, 91, 0.6);
+}
+
+/* Styling for total price section */
+.subtotal {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.8vh;
+  margin-top: 2vh;
+  font-weight: 500;
+}
+
+.cart-actions {
+  display: flex;
+  justify-content: center;
+  margin-top: 2vh;
+}
+
+.remove-cart-btn {
+  cursor: pointer;
+  height: 6vh;
+  width: 2.5vw !important;
+  margin-left: 0vw;
+  background: none;
+  color: black;
+  border: none;
+}
+
+.remove-cart-btn:hover {
+  background: white;
+}
+
+.cart-trash {
+  font-size: 3vh;
+  border: 1px solid black;
+  padding: 0.5vh 0.5vw;
+}
+
+.cart-trash:hover {
+  background: #dbdbdb;
+}
+
+.i-total {
+  font-size: 3.5vh;
+}
+
+.cart-ultimate-total {
+  font-size: 3vh;
+  font-weight: bold;
+  color: #333;
+  text-align: right;
+  margin-top: 2vh;
+  margin-right: 16vw;
+}

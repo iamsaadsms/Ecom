@@ -12,6 +12,7 @@ import SideCart from './Common/SideCart';
 import NewArrivals from './NewArrivals/NewArrivals';
 import NArrivals from './JSON/NewArrivals.json';
 import QuickAdd from './Common/QuickAdd';
+import Cart from './Cart/Cart';
 
 const App = () => {
   const [cartItems, setCartItems] = useState([]);
@@ -62,6 +63,7 @@ const App = () => {
         <Route path="/quick-add/:id" element={<QuickAdd addToCart={addToCart} toggleSideCart={toggleSideCart} />} />
         <Route path="/new-arrivals" element={<NewArrivals />} />
         <Route path="/new-arrivals/:id" element={<Articles items={NArrivals} />} />
+        <Route path='/cart' element={<Cart cartItems={cartItems} removeCartItem={removeCartItem} updateCartItemQuantity={updateCartItemQuantity} />} />
       </Routes>
       <SideCart
         isActive={isSideCartActive}

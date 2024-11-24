@@ -26,9 +26,10 @@ export default function Item({ addToCart }) {
 
   const handleAddToCart = () => {
     const item = { id: location.state.id, img, name, price, quantity };
-    console.log('Adding to cart from single page:', item); // Log item details
-    addToCart(item);
+    console.log('Adding to cart from single page:', item);
+    addToCart(item); // Use the shared addToCart function
   };
+  
 
   const itemBtn = {
     width: '27vw',
@@ -40,7 +41,7 @@ export default function Item({ addToCart }) {
   return (
     <div id="Item">
       <Navbar />
-      <div className='item-details'>
+      <div className='slide-item-details'>
         <div className='item-data'>
           <div className='item-name'>
             <span className='i-name'>{name.toUpperCase()}</span>
@@ -87,7 +88,7 @@ export default function Item({ addToCart }) {
           >
             {images.map((src, index) => (
               <SplideSlide key={index}>
-                <img src={src} alt={`Slide ${index + 1}`} className="img-item" />
+                <img src={src} alt={`Slide ${index + 1}`} className="img-item-slide" />
               </SplideSlide>
             ))}
           </Splide>

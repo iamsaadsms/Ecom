@@ -1,8 +1,8 @@
 [
-  { "pic": "s1.jpg",  "name": "New Microfiber Towels", "price": 1300},
-  { "pic": "s2.jpg",  "name": "New Detailing Brushes", "price": 3900},
-  { "pic": "s3.jpg",  "name": "New Polishing Pads", "price": 1700},
-  { "pic": "s4.jpg",  "name": "New Detailing Swabs", "price": 2500 },
-  { "pic": "s5.jpg", "name": "New Detailing Sponges", "price": 1200},
-  { "pic": "s6.jpg",  "name": "New Drying Towels", "price": 1100 }
+  { "id":1, "pic": "s1.jpg",  "name": "New Microfiber Towels", "price": 1300},
+  { "id":2, "pic": "s2.jpg",  "name": "New Detailing Brushes", "price": 3900},
+  { "id":3, "pic": "s3.jpg",  "name": "New Polishing Pads", "price": 1700},
+  { "id":4, "pic": "s4.jpg",  "name": "New Detailing Swabs", "price": 2500 },
+  { "id":5, "pic": "s5.jpg", "name": "New Detailing Sponges", "price": 1200},
+  { "id":6, "pic": "s6.jpg",  "name": "New Drying Towels", "price": 1100 }
 ]
